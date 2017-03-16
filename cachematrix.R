@@ -1,5 +1,5 @@
 ## Together, these functions calculate the inverse of a matrix or retrieve
-## the inverse from memory
+## the cached inverse from memory
 
 ## This function takes a matrix as input and returns a list that contains
 ## functions to: set or get the existing matrix, and set or get the matrice's 
@@ -22,7 +22,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## This function returns the inverse of a matrix 
-## This matrix is stored in the list that is passed as input
+## This matrix is stored in the list that is passed as input (a makeCacheMatrix object)
 ## If the inverse has already been calculated, the function retrieves it from the cache
 ## Otherwise, the function calculates the inverse (assuming matrix is invertible)
 
